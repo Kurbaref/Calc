@@ -30,7 +30,7 @@ public class Calculator {
             throw new CalculatorException("Числа должны быть от 1 до 10 включительно");
         }
 
-        // ВЫЧИСЛЕНИЯ (НОВОЕ!)
+    
         int result;
         switch (operator) {
             case "+":
@@ -43,13 +43,13 @@ public class Calculator {
                 result = num1 * num2;
                 break;
             case "/":
-                result = num1 / num2;  // Целочисленное деление
+                result = num1 / num2;  //целочисленное деление 
                 break;
             default:
                 throw new CalculatorException("Неизвестная операция");
         }
 
-        // Возвращаем результат как строку
+        // Возвращает результат как строку
         return String.valueOf(result);
     }
 }
